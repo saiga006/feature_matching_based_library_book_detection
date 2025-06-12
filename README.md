@@ -31,7 +31,7 @@ at minimal cost.
 **Datasets:**  
 - 150 high-resolution images of different book spines were captured, cropped to book boundaries, and resized to a height of 720 pixels.  
 - A separate database was created for these 150 images, including book name, author, edition, and image path.  
-- A test dataset of 50 images featuring various stacks of books was used for evaluation (see Fig. 15 in the paper located at research_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper-Sai Mukkundan.pdf)
+- A test dataset of 50 images featuring various stacks of books was used for evaluation (see Fig. 15 in the paper) ![input_Dataset](input_dataset.png)
 
 **Accuracy:**  
 - The Difference of Gaussian (DoG) with RootSIFT descriptor produced the highest number of accurate matches (69 out of 82 keypoints, score: 84), though it also yielded some false positives (13).
@@ -87,6 +87,8 @@ at minimal cost.
 #### Feature Mapping results using color descriptor - Query & Test image
 ![Feature Matches Result](output/results/result_images/inimatchnoer.jpg)
 ![Command](output/results/result_images/noergard_op1.png)
+#### Feature Mapping result with bounding box on the result book spine - Query & Test image
+![Bounding box](bounding_box_test_frame.png)
 
 ## Repository Contents
 
