@@ -104,3 +104,13 @@ booktitle={3rd International Conference on Recent Trends in Engineering and Tech
 year={2018}
 }
 ```
+## References
+
+- [Implementing RootSIFT in Python and OpenCV – PyImageSearch][1]  
+  A practical guide to implementing the RootSIFT descriptor, which improves upon the original SIFT for object recognition and retrieval tasks.[1]
+
+- [OpenCV Documentation: Feature Matching + Homography][2]  
+  Official OpenCV tutorial explaining how to perform feature matching and compute homography for object detection and localization.[2]
+
+[1]: https://pyimagesearch.com/2015/04/13/implementing-rootsift-in-python-and-opencv/
+[2]: https://docs.opencv.org/4.x/d7/dff/tutorial_feature_homography.html
