@@ -1,8 +1,11 @@
 # Feature Matching Based Library Book Detection
 This repository contains relevant code, research paper and the dataset for my bachelor thesis project (2018) on feature matching based library book detection system
 
-# Paper Title:Feature Matching Based Book Detection System
+## Project Workflow
 ![Project Workflow](Project_flow.jpg)
+
+# Paper Title:Feature Matching Based Book Detection System
+-[Refer the paper here](research_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper.pdf)
 
 ## Abstract
 > Finding a particular book from a large stack in a 
@@ -63,8 +66,27 @@ at minimal cost.
 
 ## Demo Video & Results
 
-- [Watch the demonstration video](https://youtu.be/aeV9uAz13hs)
+### Real time implementation
+- [Watch the demonstration video of real time implementation ](https://youtu.be/aeV9uAz13hs)
+
 ![Real time implementation](output/results/result_images/real_time_implementation.png)
+
+### Results
+#### Query Image
+![Query Image](output/results/result_images/Qry.jpg)
+#### Test Image
+![Test Image](output/results/result_images/ref1.JPG)
+#### Keypoint Detections using color descriptor - Query image
+![Feature Detector Query](output/results/result_images/qrykpt2noer.png)
+#### Keypoint Detections using color descriptor - Test image
+![Feature Detector Test](output/results/result_images/testkpt2noer.png)
+#### Feature Matches using color descriptor - Query image
+![Feature Matches Query](output/results/result_images/Matched_Qrykptimg_color_descriptor.jpg)
+#### Feature Matches using color descriptor - Test image
+![Feature Matches Test](output/results/result_images/matched_color_test.jpg)
+#### Feature Mapping results using color descriptor - Query & Test image
+![Feature Matches Result](output/results/result_images/inimatchnoer.jpg)
+![Command](output/results/result_images/noergard_op1.png)
 
 ## Repository Contents
 
