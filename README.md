@@ -1,5 +1,5 @@
-# Feature Matching Based Library Book Detection
-This repository contains relevant code, research paper and the dataset for my bachelor thesis project (2018) on feature matching based library book detection system
+# Feature Matching Based Library Book Detection Kiosk Bot
+This repository contains relevant code, research paper and the dataset for my bachelor thesis project (2018) on feature matching based library book detection kiosk system deployed in the university library.
 
 ## Project Workflow
 ![Project Workflow](Project_flow.jpg)
