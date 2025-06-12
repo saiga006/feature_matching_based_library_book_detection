@@ -12,7 +12,7 @@ This repository contains relevant code, research paper and the dataset for my ba
 
 - Everything was managed using a locally hosted(in library network) tomcat server dashboard made using JSP and socket programming.
 # Paper Title:Feature Matching Based Book Detection System
--[Refer the paper here](research_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper-Sai_Mukkundan.pdf)
+-[Refer the paper here](conference_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper-Sai_Mukkundan_WM.pdf)
 
 ## Abstract
 > Finding a particular book from a large stack in a 
@@ -107,7 +107,7 @@ at minimal cost.
 - **.gitattributes & .gitignore**  
   Configuration files for Git and Git LFS, specifying which files to track and ignore.
 
-- **paper/**  
+- **conference_paper/**  
   Contains the main research paper describing the methodology, experiments, and results.
 
 - **output/**  
