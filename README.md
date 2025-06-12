@@ -30,16 +30,31 @@ at minimal cost.
 
 ## Video
 
-[Provide a link to a demonstration or explanatory video.]
-
-- [Watch the demonstration video](https://your-video-link)
+- [Watch the demonstration video](https://app.box.com/s/c7jvxg5gyttwt82ep7khkvae1uxju10v)
 
 ## Repository Contents
 
-- `paper.pdf`: Full research paper
-- `results/`: Evaluation results and supplementary data
-- `video/`: (Optional) Video files or links
-- `README.md`: This file
+### Key Directories and Files
+
+- **README.md**  
+  Provides an overview of the project, organisation repo and citation information.
+
+- **.gitattributes & .gitignore**  
+  Configuration files for Git and Git LFS, specifying which files to track and ignore.
+
+- **paper/**  
+  Contains the main research paper describing the methodology, experiments, and results.
+
+- **output/**  
+  Has the output of the project:
+  - **demo_video/**: Contains demonstration videos (e.g., `bookdetectiondemo.mp4`).
+  - **results/**: Holds evaluation result images
+
+- **code/**  
+  The main source code for the project, typically including scripts for feature extraction, matching, and evaluation.
+
+- **dataset/**  
+  Contains unprocessed and processed image of library books and the csv file used for testing and demonstration.
 
 ## Citation
 
