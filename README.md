@@ -63,7 +63,7 @@ at minimal cost.
 
 ## Demo Video & Results
 
-- [Watch the demonstration video](https://app.box.com/s/c7jvxg5gyttwt82ep7khkvae1uxju10v)
+- [Watch the demonstration video](https://youtu.be/aeV9uAz13hs)
 ![Real time implementation](output/results/result_images/real_time_implementation.png)
 
 ## Repository Contents
