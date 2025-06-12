@@ -5,7 +5,7 @@ This repository contains relevant code, research paper and the dataset for my ba
 ![Project Workflow](Project_flow.jpg)
 
 # Paper Title:Feature Matching Based Book Detection System
--[Refer the paper here](research_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper.pdf)
+-[Refer the paper here](research_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper-Sai_Mukkundan.pdf)
 
 ## Abstract
 > Finding a particular book from a large stack in a 
