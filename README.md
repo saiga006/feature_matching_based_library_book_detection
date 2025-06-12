@@ -1,18 +1,19 @@
-# Feature Matching Based Library Book Detection Kiosk Bot
-This repository contains relevant code, research paper and the dataset for my bachelor thesis project (2018) on feature matching based library book detection kiosk system deployed in the university library.
+# Feature Matching Based Library Book Detection Kiosk Robot
+This repository contains relevant code, research paper and the dataset for my bachelor thesis project (2018) on feature matching based library book detection kiosk robot deployed in the university library.
 
 ## Project Workflow
 ![Project Workflow](Project_flow.jpg)
 - Developed a moving Kiosk which navigates around the library and detects the queried book using Computer Vision algorithms like DOG, RootSIFT, Lowe’s ratio, KNN, RANSAC & Perspective transform.
 
 - Created a mechanical prototype using slider ladder mechanism (first visualised in solidworks) and later 
- made it real time by making using of tetris robotics kit and actuators.
+ made it real time by making using of LEGO Tetrix robotics kit and actuators.
 
-- Computer Vision logic was managed by Raspberry Pi (acting as master) with a 10$ camera, arduino uno (acting as a slave)for bot sensing & movement controls, intercommunication was made using UART.
+- Computer Vision logic was managed by Raspberry Pi (acting as master) with a 10$ camera, arduino uno (acting as a slave)for robot sensing & movement controls, intercommunication was made using UART.
 
 - Everything was managed using a locally hosted(in library network) tomcat server dashboard made using JSP and socket programming.
+
 # Paper Title:Feature Matching Based Book Detection System
--[Refer the paper here](conference_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper-Sai_Mukkundan_WM.pdf)
+- [Please refer the paper here for more details](conference_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper-Sai_Mukkundan_WM.pdf)
 
 ## Abstract
 > Finding a particular book from a large stack in a 
@@ -47,7 +48,7 @@ at minimal cost.
 - SURF and HARRIS produced very few or no accurate matches in this setup.
 
 **Speed:**  
--  Algorithms with fewer matched keypoints (e.g., STAR, MSER, HARRIS) are typically faster, while DoG and DoG with color descriptor process more keypoints and may require more computation in compute constrained devices.
+-  Algorithms with fewer matched keypoints (e.g., STAR, MSER, HARRIS) are typically faster, while DoG and DoG with color descriptor process more keypoints and may require more computation in compute constrained devices. Parallelisation was done to reduce the computation load in raspberrypi -3.The image processing pipeline and the arduino communication were handled in a different thread.
 
 **Comparison:**  
 - DoG with RootSIFT outperforms other detectors in terms of the number of accurate matches, making it more robust for book detection in varied conditions (occlusions, tilt, rotation, non-uniform illumination).
@@ -69,14 +70,20 @@ at minimal cost.
 
 **Additional Notes:**  
 - The algorithm successfully detects books even when they are partially occluded, tilted, rotated, or under uneven lighting.
-- False positives from DoG for books with similar publisher logos can be mitigated by integrating color descriptors before homography computation.
+- False positives from DoG for books with similar publisher logos was mitigated by integrating color descriptors before homography computation.
 
 ## Demo Video & Results
 
 ### Real time implementation
+
 - [Watch the demonstration video of real time implementation ](https://youtu.be/aeV9uAz13hs)
 
 ![Real time implementation](output/results/result_images/real_time_implementation.png)
+- Shows a short demo of feature detection based library book detection robot with a web dashboard running in local server to get the book query from the library user. 
+
+- The algorithm runs on Rasperry pi 3 acting as a master and arduino as slave to control the robot motor mechanism. The library kiosk robot moves upto three layers using sliding ladder mechanism. 
+
+- The demo highlights the algorithmic, mechanical and the control aspects of library book detection robot which helps to identify the queried book from a library stack.
 
 ### Results
 #### Query Image
