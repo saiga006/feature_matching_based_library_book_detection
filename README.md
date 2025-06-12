@@ -3,7 +3,14 @@ This repository contains relevant code, research paper and the dataset for my ba
 
 ## Project Workflow
 ![Project Workflow](Project_flow.jpg)
+- Developed a moving Kiosk which navigates around the library and detects the queried book using Computer Vision algorithms like DOG, RootSIFT, Lowe’s ratio, KNN, RANSAC & Perspective transform.
 
+- Created a mechanical prototype using slider ladder mechanism (first visualised in solidworks) and later 
+ made it real time by making using of tetris robotics kit and actuators.
+
+- Computer Vision logic was managed by Raspberry Pi (acting as master) with a 10$ camera, arduino uno (acting as a slave)for bot sensing & movement controls, intercommunication was made using UART.
+
+- Everything was managed using a locally hosted(in library network) tomcat server dashboard made using JSP and socket programming.
 # Paper Title:Feature Matching Based Book Detection System
 -[Refer the paper here](research_paper/Feature_Matching_Based_Book_Detection_System_Research_Paper-Sai_Mukkundan.pdf)
 
