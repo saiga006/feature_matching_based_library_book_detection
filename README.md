@@ -43,7 +43,7 @@ at minimal cost.
 ![Real time implementation](output/results/result_images/real_time_implementation.png)
 - Shows a short demo of feature detection based library book detection robot with a web dashboard running in local server to get the book query from the library user. 
 
-- The algorithm runs on Rasperry pi 3 acting as a master and arduino as slave to control the robot motor mechanism. The library kiosk robot moves upto three layers using sliding ladder mechanism. 
+- The algorithm runs on Raspberry pi 3 acting as a master and arduino as slave to control the robot motor mechanism. The library kiosk robot moves upto three layers using sliding ladder mechanism. 
 
 - The demo highlights the algorithmic, mechanical and the control aspects of library book detection robot which helps to identify the queried book from a library stack.
 
