@@ -108,6 +108,17 @@ at minimal cost.
 
 ## Repository Contents
 
+### Key directories and files
+
+- **README.md**: Project overview, setup context, results, and references.
+- **code/**: Core feature matching pipeline and supporting descriptor/matcher modules.
+- **dataset/**: Raw/processed image data and metadata (`dataset.csv`) used for experiments.
+- **output/**: Demo video and generated result images from experiments.
+- **conference_paper/**: Published paper for the project.
+- **presentation/**: Slides used for reviews and final viva.
+
+### Repository tree
+
 ```text
 feature_matching_based_library_book_detection/
 ├── README.md
