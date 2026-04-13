@@ -86,10 +86,9 @@ at minimal cost.
 - The demo highlights the algorithmic, mechanical and the control aspects of library book detection robot which helps to identify the queried book from a library stack.
 
 ### Results
-#### Query Image
-![Query Image](output/results/result_images/Qry.jpg)
-#### Test Image
-![Test Image](output/results/result_images/ref1.JPG)
+| Query Image | Test Image |
+|---|---|
+| ![Query Image](output/results/result_images/Qry.jpg) | ![Test Image](output/results/result_images/ref1.JPG) |
 #### Keypoint Detections using color descriptor - Query image
 ![Feature Detector Query](output/results/result_images/qrykpt2noer.png)
 #### Keypoint Detections using color descriptor - Test image
