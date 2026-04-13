@@ -34,6 +34,40 @@ applied is an accurate method as it proves to be scale, affine and
 illumination invariant and can also be deployed easily in real-time 
 at minimal cost.
 
+## Demo Video & Results
+
+### Real time implementation
+
+- [Watch the demonstration video of real time implementation ](https://youtu.be/aeV9uAz13hs)
+
+![Real time implementation](output/results/result_images/real_time_implementation.png)
+- Shows a short demo of feature detection based library book detection robot with a web dashboard running in local server to get the book query from the library user. 
+
+- The algorithm runs on Raspberry pi 3 acting as a master and arduino as slave to control the robot motor mechanism. The library kiosk robot moves upto three layers using sliding ladder mechanism. 
+
+- The demo highlights the algorithmic, mechanical and the control aspects of library book detection robot which helps to identify the queried book from a library stack.
+
+### Results
+| Query Image | Test Image |
+| --- | --- |
+| <img src="output/results/result_images/Qry.jpg" alt="Query Image" width="90"> | <img src="output/results/result_images/ref1.JPG" alt="Test Image" width="450"> |
+
+#### Keypoint Detections using color descriptor
+| Query image | Test image |
+| --- | --- |
+| <img src="output/results/result_images/qrykpt2noer.png" alt="Feature Detector Query" width="90"> | <img src="output/results/result_images/testkpt2noer.png" alt="Feature Detector Test" width="450"> |
+
+#### Feature Matches using color descriptor
+| Query image | Test image |
+| --- | --- |
+| <img src="output/results/result_images/Matched_Qrykptimg_color_descriptor.jpg" alt="Feature Matches Query" width="90"> | <img src="output/results/result_images/matched_color_test.jpg" alt="Feature Matches Test" width="450"> |
+
+#### Feature Mapping results using color descriptor - Query & Test image
+![Feature Matches Result](output/results/result_images/inimatchnoer.jpg)
+![Command](output/results/result_images/noergard_op1.png)
+#### Feature Mapping result with bounding box on the result book spine - Query & Test image
+![Bounding box](bounding_box_test_frame.png)
+
 ## Evaluation Results
 
 **Datasets:**  
@@ -72,66 +106,50 @@ at minimal cost.
 - The algorithm successfully detects books even when they are partially occluded, tilted, rotated, or under uneven lighting.
 - False positives from DoG for books with similar publisher logos was mitigated by integrating color descriptors before homography computation.
 
-## Demo Video & Results
-
-### Real time implementation
-
-- [Watch the demonstration video of real time implementation ](https://youtu.be/aeV9uAz13hs)
-
-![Real time implementation](output/results/result_images/real_time_implementation.png)
-- Shows a short demo of feature detection based library book detection robot with a web dashboard running in local server to get the book query from the library user. 
-
-- The algorithm runs on Rasperry pi 3 acting as a master and arduino as slave to control the robot motor mechanism. The library kiosk robot moves upto three layers using sliding ladder mechanism. 
-
-- The demo highlights the algorithmic, mechanical and the control aspects of library book detection robot which helps to identify the queried book from a library stack.
-
-### Results
-| Query Image | Test Image |
-| --- | --- |
-| ![Query Image](output/results/result_images/Qry.jpg) | ![Test Image](output/results/result_images/ref1.JPG) |
-
-#### Keypoint Detections using color descriptor
-| Query image | Test image |
-| --- | --- |
-| ![Feature Detector Query](output/results/result_images/qrykpt2noer.png) | ![Feature Detector Test](output/results/result_images/testkpt2noer.png) |
-
-#### Feature Matches using color descriptor
-| Query image | Test image |
-| --- | --- |
-| ![Feature Matches Query](output/results/result_images/Matched_Qrykptimg_color_descriptor.jpg) | ![Feature Matches Test](output/results/result_images/matched_color_test.jpg) |
-
-#### Feature Mapping results using color descriptor - Query & Test image
-![Feature Matches Result](output/results/result_images/inimatchnoer.jpg)
-![Command](output/results/result_images/noergard_op1.png)
-#### Feature Mapping result with bounding box on the result book spine - Query & Test image
-![Bounding box](bounding_box_test_frame.png)
-
 ## Repository Contents
 
-### Key Directories and Files
+### Key directories and files
 
-- **README.md**  
-  Provides an overview of the project, organisation repo and citation information.
+- **README.md**: Project overview, setup context, results, and references.
+- **code/**: Core feature matching pipeline and supporting descriptor/matcher modules.
+- **dataset/**: Raw/processed image data and metadata (`dataset.csv`) used for experiments.
+- **output/**: Demo video and generated result images from experiments.
+- **conference_paper/**: Published paper for the project.
+- **presentation/**: Slides used for reviews and final viva.
 
-- **.gitattributes & .gitignore**  
-  Configuration files for Git and Git LFS, specifying which files to track and ignore.
+### Repository tree
 
-- **conference_paper/**  
-  Contains the main research paper describing the methodology, experiments, and results.
-
-- **output/**  
-  Has the output of the project:
-  - **demo_video/**: Contains demonstration videos (e.g., `bookdetectiondemo.mp4`).
-  - **results/**: Holds evaluation result images
-
-- **code/**  
-  The main source code for the project, typically including scripts for feature extraction, matching, and evaluation.
-
-- **dataset/**  
-  Contains unprocessed and processed image of library books and the csv file used for testing and demonstration.
-
-- **presentation/**  
-  Contains more details on the real time implementation, literature survey, possible methods tried to identify the book title before the finalised approach.
+```text
+feature_matching_based_library_book_detection/
+├── README.md
+├── LICENSE
+├── Project_flow.jpg
+├── input_dataset.png
+├── bounding_box_test_frame.png
+├── code/
+│   ├── feature_match.py
+│   └── pyimagesearch/
+│       ├── covermatcher.py
+│       ├── detectanddescribe.py
+│       └── descriptors/
+│           └── rootsift.py
+├── dataset/
+│   ├── dataset.csv
+│   ├── processed/
+│   │   └── cropped_book_spines/
+│   └── unprocessed/
+│       └── library stack dslr photos/
+├── output/
+│   ├── demo_video/
+│   │   └── bookdetectiondemo.mp4
+│   └── results/
+│       └── result_images/
+├── conference_paper/
+│   └── Feature_Matching_Based_Book_Detection_System_Research_Paper-Sai_Mukkundan_WM.pdf
+└── presentation/
+    ├── Review 1.pdf
+    └── final_viva.pdf
+```
 
 ## Citation
 
@@ -146,11 +164,7 @@ year={2018}
 ```
 ## References
 
-- [Implementing RootSIFT in Python and OpenCV – PyImageSearch][1]  
-  A practical guide to implementing the RootSIFT descriptor, which improves upon the original SIFT for object recognition and retrieval tasks.[1]
-
-- [OpenCV Documentation: Feature Matching + Homography][2]  
-  Official OpenCV tutorial explaining how to perform feature matching and compute homography for object detection and localization.[2]
-
-[1]: https://pyimagesearch.com/2015/04/13/implementing-rootsift-in-python-and-opencv/
-[2]: https://docs.opencv.org/4.x/d7/dff/tutorial_feature_homography.html
+1. [Implementing RootSIFT in Python and OpenCV – PyImageSearch](https://pyimagesearch.com/2015/04/13/implementing-rootsift-in-python-and-opencv/)  
+   A practical guide to implementing the RootSIFT descriptor, which improves upon the original SIFT for object recognition and retrieval tasks.
+2. [OpenCV Documentation: Feature Matching + Homography](https://docs.opencv.org/4.x/d7/dff/tutorial_feature_homography.html)  
+   Official OpenCV tutorial explaining how to perform feature matching and compute homography for object detection and localization.
