@@ -87,7 +87,7 @@ at minimal cost.
 
 ### Results
 | Query Image | Test Image |
-|---|---|
+| --- | --- |
 | ![Query Image](output/results/result_images/Qry.jpg) | ![Test Image](output/results/result_images/ref1.JPG) |
 #### Keypoint Detections using color descriptor - Query image
 ![Feature Detector Query](output/results/result_images/qrykpt2noer.png)
