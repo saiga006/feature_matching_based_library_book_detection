@@ -50,17 +50,17 @@ at minimal cost.
 ### Results
 | Query Image | Test Image |
 | --- | --- |
-| <img src="output/results/result_images/Qry.jpg" alt="Query Image" width="360"> | <img src="output/results/result_images/ref1.JPG" alt="Test Image" width="360"> |
+| <img src="output/results/result_images/Qry.jpg" alt="Query Image" width="120"> | <img src="output/results/result_images/ref1.JPG" alt="Test Image" width="360"> |
 
 #### Keypoint Detections using color descriptor
 | Query image | Test image |
 | --- | --- |
-| <img src="output/results/result_images/qrykpt2noer.png" alt="Feature Detector Query" width="360"> | <img src="output/results/result_images/testkpt2noer.png" alt="Feature Detector Test" width="360"> |
+| <img src="output/results/result_images/qrykpt2noer.png" alt="Feature Detector Query" width="120"> | <img src="output/results/result_images/testkpt2noer.png" alt="Feature Detector Test" width="360"> |
 
 #### Feature Matches using color descriptor
 | Query image | Test image |
 | --- | --- |
-| <img src="output/results/result_images/Matched_Qrykptimg_color_descriptor.jpg" alt="Feature Matches Query" width="360"> | <img src="output/results/result_images/matched_color_test.jpg" alt="Feature Matches Test" width="360"> |
+| <img src="output/results/result_images/Matched_Qrykptimg_color_descriptor.jpg" alt="Feature Matches Query" width="120"> | <img src="output/results/result_images/matched_color_test.jpg" alt="Feature Matches Test" width="360"> |
 
 #### Feature Mapping results using color descriptor - Query & Test image
 ![Feature Matches Result](output/results/result_images/inimatchnoer.jpg)
