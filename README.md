@@ -89,14 +89,17 @@ at minimal cost.
 | Query Image | Test Image |
 | --- | --- |
 | ![Query Image](output/results/result_images/Qry.jpg) | ![Test Image](output/results/result_images/ref1.JPG) |
-#### Keypoint Detections using color descriptor - Query image
-![Feature Detector Query](output/results/result_images/qrykpt2noer.png)
-#### Keypoint Detections using color descriptor - Test image
-![Feature Detector Test](output/results/result_images/testkpt2noer.png)
-#### Feature Matches using color descriptor - Query image
-![Feature Matches Query](output/results/result_images/Matched_Qrykptimg_color_descriptor.jpg)
-#### Feature Matches using color descriptor - Test image
-![Feature Matches Test](output/results/result_images/matched_color_test.jpg)
+
+#### Keypoint Detections using color descriptor
+| Query image | Test image |
+| --- | --- |
+| ![Feature Detector Query](output/results/result_images/qrykpt2noer.png) | ![Feature Detector Test](output/results/result_images/testkpt2noer.png) |
+
+#### Feature Matches using color descriptor
+| Query image | Test image |
+| --- | --- |
+| ![Feature Matches Query](output/results/result_images/Matched_Qrykptimg_color_descriptor.jpg) | ![Feature Matches Test](output/results/result_images/matched_color_test.jpg) |
+
 #### Feature Mapping results using color descriptor - Query & Test image
 ![Feature Matches Result](output/results/result_images/inimatchnoer.jpg)
 ![Command](output/results/result_images/noergard_op1.png)
